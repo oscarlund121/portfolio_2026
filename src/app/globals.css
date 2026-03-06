@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mux-pink: #4A90E2; /* Medium light retro blue */
+  --color-mux-yellow: #ffcc00;
+  --color-mux-bg: #f3f0eb;
+  --color-mux-dark: #1f1f1f;
+  --color-mux-border: rgba(0, 0, 0, 0.15);
+}
+
+@layer base {
+  :root {
+    --background: #f3f0eb;
+    --foreground: #000000;
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--color-mux-border);
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply antialiased selection:bg-mux-pink selection:text-white font-sans;
+  }
+}
+
+/* Custom layout utilities */
+@layer utilities {
+  .neo-shadow {
+    box-shadow: 4px 4px 0px var(--color-mux-dark);
+    border: 2px solid var(--color-mux-dark);
+  }
+  .neo-shadow:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px var(--color-mux-dark);
+  }
+  
+  .neo-shadow-static {
+    box-shadow: 8px 8px 0px var(--color-mux-dark);
+    border: 2px solid var(--color-mux-dark);
+  }
+
+  .pill-button {
+    @apply inline-flex items-center justify-center font-bold text-sm tracking-wide transition-all border-2 border-black;
+    box-shadow: 4px 4px 0px black;
+  }
+  .pill-button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px black;
+  }
+  .pill-button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px black;
+  }
+  
+  .pill-button-black {
+    @apply bg-white text-black px-8 py-3;
+  }
+  .pill-button-outline {
+    @apply bg-transparent text-black px-8 py-3;
+  }
+  .pill-button-yellow {
+    @apply bg-mux-yellow text-black px-6 py-2;
+  }
+  
+  .grid-container {
+    @apply max-w-[1440px] mx-auto border-x border-mux-border;
+  }
+  
+  /* Text styles matching Mux */
+  .tech-mono {
+    @apply font-mono text-sm tracking-widest uppercase;
+  }
+}
