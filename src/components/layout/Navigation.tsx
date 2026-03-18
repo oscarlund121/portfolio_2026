@@ -3,17 +3,20 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X } from 'lucide-react';
+import { FiMenu, FiX } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
+import Button from '@/components/ui/Button';
+
+const navLinks = [
+  { name: "Projects", path: "/projects" },
+  { name: "About", path: "/about" },
+];
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
-  const links = [
-    { name: 'Projects', path: '/projects' },
-    { name: 'About', path: '/about' },
-  ];
+  const links = navLinks;
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -56,9 +59,9 @@ export function Navigation() {
           <Link href="https://github.com" target="_blank" className="text-sm font-bold tracking-widest text-black uppercase hover:text-black/60 transition-colors">
             GITHUB
           </Link>
-          <Link href="/contact" className="pill-button-yellow uppercase text-xs tracking-widest leading-none py-3">
+          <Button variant="accent" href="/contact" className="tracking-widest leading-none py-3">
             Contact Me
-          </Link>
+          </Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -70,9 +73,9 @@ export function Navigation() {
           >
             <span className="sr-only">Open main menu</span>
             {isOpen ? (
-              <X className="block h-6 w-6" aria-hidden="true" />
+              <FiX className="block h-6 w-6" aria-hidden="true" />
             ) : (
-              <Menu className="block h-6 w-6" aria-hidden="true" />
+              <FiMenu className="block h-6 w-6" aria-hidden="true" />
             )}
           </button>
         </div>

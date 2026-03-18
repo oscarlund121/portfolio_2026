@@ -1,15 +1,17 @@
-import { Mail, MapPin, Send } from "lucide-react";
+import { FiMail, FiMapPin, FiSend } from "react-icons/fi";
+import PageIntro from "@/components/ui/PageIntro";
+import Button from "@/components/ui/Button";
 
 export default function Contact() {
   return (
     <div className="w-full bg-mux-bg min-h-[calc(100vh-72px)]">
-      <div className="grid-container border-b border-mux-border pt-16 pb-24 text-center">
-        <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6 text-black">Get in touch</h1>
-        <p className="text-xl text-black/80 max-w-2xl mx-auto font-medium">
-          Whether you have a project in mind, a role to discuss, or just want to say hi, 
-          I'm always open to new opportunities.
+      <PageIntro title="Get In Touch">
+        <p>
+          Whether it&apos;s a project, a collaboration, or a role worth
+          discussing, feel free to reach out. I&apos;m always open to good
+          conversations around frontend, design, and digital work.
         </p>
-      </div>
+      </PageIntro>
 
       <div className="grid-container grid grid-cols-1 md:grid-cols-2">
         {/* Contact Info */}
@@ -20,7 +22,7 @@ export default function Contact() {
             
             <div className="flex items-start space-x-6 mb-8">
               <div className="p-4 bg-black text-white">
-                <Mail className="h-6 w-6" />
+                <FiMail className="h-6 w-6" />
               </div>
               <div>
                 <h3 className="tech-mono text-black mb-1">Email Me</h3>
@@ -32,7 +34,7 @@ export default function Contact() {
 
             <div className="flex items-start space-x-6">
               <div className="p-4 bg-mux-yellow text-black border border-black">
-                <MapPin className="h-6 w-6" />
+                <FiMapPin className="h-6 w-6" />
               </div>
               <div>
                 <h3 className="tech-mono text-black mb-1">Location</h3>
@@ -78,13 +80,10 @@ export default function Contact() {
               ></textarea>
             </div>
             
-            <button 
-              type="button" 
-              className="w-full pill-button pill-button-black flex items-center justify-center space-x-2 py-4 mt-8"
-            >
+            <Button type="submit" className="w-full flex items-center justify-center space-x-2 py-4 mt-8">
               <span>SEND MESSAGE</span>
-              <Send className="h-4 w-4" />
-            </button>
+              <FiSend className="h-4 w-4" />
+            </Button>
           </form>
         </div>
       </div>
