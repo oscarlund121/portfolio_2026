@@ -7,7 +7,7 @@ import { projects } from "@/components/sections/ProjectCard";
 export const FeaturedProjects = () => {
   return (
     <section className="w-full bg-mux-bg border-b border-mux-border">
-      <div className="grid-container px-4 sm:px-6 lg:px-8 pt-16 pb-8 md:pt-24 md:pb-12">
+      <div className="grid-container px-4 sm:px-6 lg:px-8 pt-16 pb-8 md:py-18">
         <SectionHeading
           title="Latest Project"
         />
@@ -78,7 +78,7 @@ export const FeaturedProjects = () => {
 
             <div
               className={`w-full md:w-1/2 p-8 md:p-16 flex items-center justify-center ${
-                index % 2 === 0 ? "bg-mux-pink/10" : "bg-mux-yellow/10"
+                index % 2 === 0 ? "bg-mux-blue/10" : "bg-mux-yellow/10"
               }`}
             >
               {project.image ? (

@@ -56,10 +56,10 @@ export function Navigation() {
 
         {/* Right Call to Actions */}
         <div className="hidden md:flex items-center space-x-6 border-l border-mux-border pl-6 h-full">
-          <Link href="https://github.com" target="_blank" className="text-sm font-bold tracking-widest text-black uppercase hover:text-black/60 transition-colors">
+          <Link href="https://github.com/oscarlund121" target="_blank" className="text-sm font-bold tracking-widest text-black uppercase hover:text-black/60 transition-colors">
             GITHUB
           </Link>
-          <Button variant="accent" href="/contact" className="uppercase text-xs tracking-widest leading-none py-2 px-6">
+          <Button variant="accent" href="/contact" className="text-xs tracking-widest leading-none uppercase">
             Contact Me
           </Button>
         </div>

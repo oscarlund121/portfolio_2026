@@ -163,17 +163,22 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
 
       <div
         className={`w-full md:w-1/2 p-8 md:p-16 flex items-center justify-center ${
-          index % 2 === 0 ? "bg-mux-pink/10" : "bg-mux-yellow/10"
+          index % 2 === 0 ? "bg-mux-blue/10" : "bg-mux-yellow/10"
         }`}
       >
         {project.image ? (
-          <div className="group relative w-full aspect-video bg-black neo-shadow overflow-hidden transition-all duration-300">
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative w-full aspect-video bg-black neo-shadow overflow-hidden transition-all duration-300 block"
+          >
             <img
               src={project.image}
               alt={project.title}
-              className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 grayscale group-hover:grayscale-0"
+              className="absolute inset-0 w-full h-full object-cover"
             />
-          </div>
+          </a>
         ) : (
           <div className="w-full aspect-video bg-mux-bg border-2 border-black neo-shadow-static flex items-center justify-center">
             <span className="tech-mono text-black/40">Preview</span>

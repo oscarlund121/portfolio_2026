@@ -2,8 +2,8 @@ import Button from "@/components/ui/Button";
 
 export const Hero = () => {
   return (
-    <section className="w-full bg-mux-pink border-b border-mux-border hero-grid">
-      <div className="grid-container px-4 py-24 sm:py-28 lg:px-8 flex flex-col items-start">
+    <section className="w-full bg-mux-blue border-b border-mux-border">
+      <div className="grid-container hero-grid px-4 py-24 sm:py-28 lg:px-8 flex flex-col items-start">
         {/* Eyebrow */}
         <p className="text-xs font-bold tracking-[0.2em] uppercase text-black/50 mb-6 border border-black/20 inline-block px-3 py-1">
           Frontend / UI / Multimedia
@@ -14,7 +14,7 @@ export const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-xl text-black/80 max-w-2xl mb-3 font-medium leading-relaxed">
-          I&apos;m Oscar, a web development student focused on building responsive,
+          I'm Oscar, a web development student focused on building responsive,
           user-friendly websites with strong visual design.
         </p>
 
