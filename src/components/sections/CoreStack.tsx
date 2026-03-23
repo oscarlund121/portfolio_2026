@@ -18,13 +18,13 @@ const coreStack = [
 
 export const CoreStack = () => {
   return (
-    <section className="w-full bg-mux-bg border-2 border-black">
-      <div className="grid-container border-b border-mux-border py-4 text-center">
+    <section className="w-full bg-mux-bg border-[0.5px] border-mux-border">
+      <div className="grid-container py-4 text-center">
         <p className="tech-mono text-black">Core Stack</p>
       </div>
       <div className="grid-container grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-mux-border text-center font-bold items-center">
         {coreStack.map(({ label, icon: Icon }) => (
-          <div key={label} className="py-8 border-[0.5px] border-mux-border flex flex-col items-center gap-2">
+          <div key={label} className="py-8 border-[0.5px] border-m  ux-border flex flex-col items-center gap-2">
             <Icon size={28} />
             <span className="text-lg">{label}</span>
           </div>

@@ -3,15 +3,15 @@ import type { TimelineEntry } from "@/types";
 const timeline: TimelineEntry[] = [
   {
     title: "Top-Up in Web Development",
-    meta: "2025 — Present",
+    meta: "2025 Present",
     description:
       "Currently building on my design background with a stronger technical focus on frontend development, modern workflows, and problem-solving in code. At the moment, I'm expanding my skills in TypeScript and Python alongside my existing frontend stack.",
   },
   {
     title: "Multimedia Design",
-    meta: "2023 — 2025",
+    meta: "2023 2025",
     description:
-      "Built a foundation in visual communication, UI/UX thinking, digital prototyping, and design systems — skills I now bring directly into frontend development.",
+      "Built a foundation in visual communication, UI/UX thinking, digital prototyping, and design systems, skills I now bring directly into frontend development.",
   },
   {
     title: "Frontend Focus",

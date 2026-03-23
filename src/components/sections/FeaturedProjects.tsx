@@ -9,13 +9,12 @@ export const FeaturedProjects = () => {
     <section className="w-full bg-mux-bg border-b border-mux-border">
       <div className="grid-container px-4 sm:px-6 lg:px-8 pt-16 pb-8 md:pt-24 md:pb-12">
         <SectionHeading
-          title="Selected Projects"
-          intro="A selection of projects that reflect my transition from multimedia design into frontend development — with a focus on responsive interfaces, visual consistency, and practical UI work."
+          title="Latest Project"
         />
       </div>
 
-      <div className="grid-container flex flex-col">
-        {projects.map((project, index) => (
+      <div className="grid-container flex flex-col border-[0.5px] border-mux-border">
+        {projects.slice(0, 1).map((project, index) => (
           <div
             key={project.title}
             className={`flex flex-col md:flex-row border-b border-mux-border last:border-b-0 ${
@@ -29,12 +28,26 @@ export const FeaturedProjects = () => {
                   : "md:border-r border-b md:border-b-0"
               } border-mux-border`}
             >
-              <h3 className="text-3xl md:text-4xl font-black mb-4 uppercase tracking-tight text-black">
+              <h3 className="text-3xl md:text-4xl font-black mb-1 uppercase tracking-tight text-black">
                 {project.title}
               </h3>
-              <p className="text-black/70 mb-8 text-lg leading-relaxed font-medium">
+
+              {(project.year || project.projectType || project.status) && (
+                <p className="tech-mono text-black/40 mb-5 text-[0.7rem]">
+                  {[project.year, project.projectType, project.status].filter(Boolean).join(" · ")}
+                </p>
+              )}
+
+              <p className="text-black/70 mb-4 text-lg leading-relaxed font-medium">
                 {project.description}
               </p>
+
+              {project.whatIDid && (
+                <p className="text-black/60 mb-6 text-sm leading-relaxed border-l-2 border-mux-yellow pl-3">
+                  <span className="font-bold text-black/80">What I did: </span>
+                  {project.whatIDid}
+                </p>
+              )}
 
               <div className="flex flex-wrap gap-2 mb-8">
                 {project.tags.map((tag) => (
@@ -44,7 +57,7 @@ export const FeaturedProjects = () => {
 
               <div className="flex flex-wrap items-center gap-4">
                 {project.liveUrl && (
-                  <Button href={project.liveUrl} external className="gap-2">
+                  <Button variant="primary" href={project.liveUrl} external className="gap-2">
                     {project.liveLabel ?? "View Live"}{" "}
                     <FiExternalLink className="h-4 w-4" />
                   </Button>

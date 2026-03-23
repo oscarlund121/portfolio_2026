@@ -51,4 +51,12 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
+
+  .hero-grid {
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 48px 48px;
+  
+  }
 }

@@ -27,11 +27,11 @@ export function Navigation() {
   const isPink = true;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-mux-pink border-b border-mux-border transition-colors duration-300">
-      <div className="grid-container h-[72px] flex items-center justify-between px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-mux-bg border-b border-mux-border transition-colors duration-300">
+      <div className="grid-container h-18 flex items-center justify-between px-4 sm:px-6 lg:px-8">
         
         {/* Logo */}
-        <div className="flex-shrink-0 flex items-center">
+        <div className="shrink-0 flex items-center">
           <Link href="/" className="text-2xl font-black tracking-tighter text-black uppercase">
             Oscar
           </Link>
@@ -59,7 +59,7 @@ export function Navigation() {
           <Link href="https://github.com" target="_blank" className="text-sm font-bold tracking-widest text-black uppercase hover:text-black/60 transition-colors">
             GITHUB
           </Link>
-          <Button variant="accent" href="/contact" className="tracking-widest leading-none py-3">
+          <Button variant="accent" href="/contact" className="uppercase text-xs tracking-widest leading-none py-2 px-6">
             Contact Me
           </Button>
         </div>

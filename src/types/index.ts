@@ -1,8 +1,12 @@
 export type Project = {
   title: string;
   description: string;
+  whatIDid?: string;
   role?: string;
   tech?: string;
+  year?: string;
+  projectType?: string;
+  status?: string;
   tags: string[];
   image?: string;
   liveUrl?: string;

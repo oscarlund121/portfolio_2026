@@ -11,7 +11,7 @@ export const HowIWork = () => {
         <p className="text-lg text-black/80 font-medium leading-relaxed">
           I enjoy turning visual ideas into working interfaces. My approach is
           usually a mix of structure, visual consistency, and practical frontend
-          thinking — making sure the end result not only looks good, but also
+          thinking, making sure the end result not only looks good, but also
           feels clear and works properly across devices.
         </p>
         <p className="text-lg text-black/80 font-medium leading-relaxed">

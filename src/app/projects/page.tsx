@@ -5,17 +5,7 @@ import { ProjectCard } from "@/components/sections/ProjectCard";
 export default function Projects() {
   return (
     <div className="w-full bg-mux-bg">
-      <PageIntro title="Projects" bg="bg-mux-yellow">
-        <p>
-          A selection of projects that show how I work with design and frontend
-          development in practice — from visual concepts to responsive, coded
-          interfaces.
-        </p>
-        <p>
-          My work is centered around clean UI, strong visual structure, and
-          building digital experiences that feel both thoughtful and functional.
-        </p>
-      </PageIntro>
+      <PageIntro title="Projects" bg="bg-mux-yellow" />
 
       <div className="grid-container flex flex-col">
         {projects.map((project, index) => (

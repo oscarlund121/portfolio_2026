@@ -2,31 +2,29 @@ import Button from "@/components/ui/Button";
 
 export const Hero = () => {
   return (
-    <section className="w-full bg-mux-pink border-b border-mux-border">
-      <div className="grid-container px-4 py-24 sm:py-32 lg:px-8 flex flex-col items-center justify-center text-center">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter text-black mb-8 max-w-5xl leading-[0.95]">
-          Web Development Student
-          <br />
-          <span className="text-mux-yellow">& Multimedia Designer</span>
+    <section className="w-full bg-mux-pink border-b border-mux-border hero-grid">
+      <div className="grid-container px-4 py-24 sm:py-28 lg:px-8 flex flex-col items-start">
+        {/* Eyebrow */}
+        <p className="text-xs font-bold tracking-[0.2em] uppercase text-black/50 mb-6 border border-black/20 inline-block px-3 py-1">
+          Frontend / UI / Multimedia
+        </p>
+
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black uppercase tracking-tighter text-black mb-6 max-w-4xl leading-[0.9]">
+          Future <span className="text-mux-yellow">Fullstack</span> Developer
         </h1>
 
-        <p className="text-lg md:text-xl text-black/80 max-w-3xl mb-4 font-medium leading-relaxed">
-          I'm Oscar — a web development student focused on building
-          responsive websites and digital experiences with a strong eye for
-          visual design, structure, and user experience.
+        <p className="text-lg md:text-xl text-black/80 max-w-2xl mb-3 font-medium leading-relaxed">
+          I&apos;m Oscar, a web development student focused on building responsive,
+          user-friendly websites with strong visual design.
         </p>
 
-        <p className="text-base md:text-lg text-black/60 max-w-3xl mb-12 font-medium leading-relaxed">
-          Right now, I'm strengthening my frontend skills while expanding
-          into <span className="text-mux-yellow">TypeScript</span> and <span className="text-mux-yellow">Python</span> through my top-up education in web
-          development.
+        <p className="text-base text-black/60 max-w-2xl mb-12 font-medium">
+          Currently sharpening my frontend skills and working with TypeScript and Python.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Button href="/projects">View Projects</Button>
-          <Button variant="outline" href="/contact">
-            Contact Me
-          </Button>
+        <div className="flex flex-col sm:flex-row items-start gap-4">
+          <Button variant="primary" href="/projects">View Projects</Button>
+          <Button variant="accent" href="/contact">Contact Me</Button>
         </div>
       </div>
     </section>
