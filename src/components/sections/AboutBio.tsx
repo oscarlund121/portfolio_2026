@@ -14,7 +14,7 @@ export const AboutBio = () => {
           <div className="md:w-3/5 space-y-6">
             <p className="tech-mono text-black/40 text-xs">About me</p>
             <p className="text-2xl md:text-3xl font-bold text-black leading-snug tracking-tight">
-              I&apos;m Oscar, a web development student with a background in multimedia design.
+              I'm Oscar, a web development student with a background in multimedia design.
               I build digital experiences that are{" "}
               <span className="text-mux-yellow">clear, responsive, and well crafted</span>{" "}
               both visually and technically.

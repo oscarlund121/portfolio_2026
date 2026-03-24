@@ -8,6 +8,7 @@ interface Props {
   children?: React.ReactNode;
   className?: string;
   type?: "button" | "submit";
+  disabled?: boolean;
 }
 
 const base =
@@ -26,6 +27,7 @@ const Button = ({
   children,
   className = "",
   type = "button",
+  disabled = false,
 }: Props) => {
   const classes = `${base} ${variants[variant]} ${className}`.trim();
 
@@ -42,7 +44,7 @@ const Button = ({
   }
 
   return (
-    <button type={type} className={classes}>
+    <button type={type} className={classes} disabled={disabled}>
       {children}
     </button>
   );

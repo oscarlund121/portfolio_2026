@@ -20,6 +20,24 @@
 }
 
 @layer utilities {
+  .neo-input {
+    width: 100%;
+    background: white;
+    border: 2px solid black;
+    padding: 0.75rem 1rem;
+    color: black;
+    font-family: var(--font-sans, ui-sans-serif, sans-serif);
+    border-radius: 0;
+    box-shadow: 4px 4px 0px black;
+    transition: all 0.15s ease;
+  }
+
+  .neo-input:focus {
+    outline: none;
+    transform: translate(1px, 1px);
+    box-shadow: none;
+  }
+
   .neo-shadow {
     box-shadow: 4px 4px 0px var(--color-mux-dark);
     border: 2px solid var(--color-mux-dark);
