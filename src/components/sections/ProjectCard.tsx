@@ -23,6 +23,21 @@ export const projects: Project[] = [
     sourceLabel: "Source Code",
   },
   {
+    title: "Travel Destination Tracker",
+    description:
+      "A full-stack travel destination tracker built with Python and Flask. Users can sign up, log in, and manage their own list of destinations with dates, location, and description.",
+    whatIDid:
+      "Built the backend with Flask, designed and created the MariaDB database (users and destinations tables), implemented user authentication with hashed passwords, and connected everything with server-rendered Jinja2 templates.",
+    role: "Full-Stack Development",
+    tech: "Python, Flask, MariaDB, Docker, Jinja2",
+    year: "2026",
+    projectType: "School project",
+    status: "Completed",
+    tags: ["Python", "Flask", "MariaDB", "Docker", "Full-Stack"],
+    sourceUrl: "https://github.com/oscarlund121/2026_1_travel",
+    sourceLabel: "Source Code",
+  },
+  {
     title: "Frontend Portfolio Website",
     description:
       "A portfolio built to explore layout, visual identity, animation, and responsive frontend development through custom HTML, CSS, and JavaScript.",
@@ -41,21 +56,6 @@ export const projects: Project[] = [
     sourceLabel: "Source Code",
   },
   {
-    title: "Async/Exhibit",
-    description:
-      "A frontend-focused exhibition and event management concept built around structured UI work, API-based content, and a strong focus on usability.",
-    whatIDid:
-      "Built UI components, integrated API-based content, and focused on scalable page structure and digital flow.",
-    role: "Frontend Development, UI Design",
-    tech: "Next.js, React, Tailwind CSS, API Integration",
-    year: "2024",
-    projectType: "School project",
-    status: "In progress",
-    tags: ["Next.js", "React", "Tailwind CSS", "API Integration"],
-    liveLabel: "View Project",
-    sourceLabel: "Source Code",
-  },
-  {
     title: "Exam Project",
     description:
       "A school exam project built around real-world frontend techniques: API fetching, data mapping, and dynamic filtering with a focus on clean component structure.",
@@ -70,21 +70,7 @@ export const projects: Project[] = [
     image: "/img/dmp-eksamen.png",
     sourceLabel: "Source Code",
   },
-  {
-    title: "Frontend Webshop Project",
-    description:
-      "A webshop focused on product listing, filtering, pagination, and component-based UI. Built to strengthen practical frontend workflow in React and Next.js.",
-    whatIDid:
-      "Built product listing pages, filtering, and pagination using React and Next.js with a focus on reusable component patterns.",
-    role: "Frontend Development",
-    tech: "Next.js, React, Tailwind CSS, API Data",
-    year: "2024",
-    projectType: "School project",
-    status: "In progress",
-    tags: ["Next.js", "React", "Tailwind CSS", "API Data"],
-    liveLabel: "View Project",
-    sourceLabel: "Source Code",
-  },
+
 ];
 
 type ProjectCardProps = {

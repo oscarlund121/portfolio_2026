@@ -9,10 +9,7 @@ export const CurrentlyLearning = () => {
         <SectionHeading title="Currently Learning" />
 
         <p className="text-lg text-black/80 max-w-3xl mx-auto font-medium leading-relaxed text-center mt-4 mb-10">
-          As part of my top-up education in web development, I'm currently
-          expanding my skill set with TypeScript and Python. My main focus is
-          still frontend, but I'm building a broader technical foundation
-          step by step.
+          As part of my top-up education in web development, I'm currently expanding my skill set with TypeScript and Python while continuing to strengthen my frontend foundation and build a broader technical understanding.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">

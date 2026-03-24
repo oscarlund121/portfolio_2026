@@ -3,21 +3,21 @@ import type { TimelineEntry } from "@/types";
 const timeline: TimelineEntry[] = [
   {
     title: "Top-Up in Web Development",
-    meta: "2025 Present",
+    meta: "2026 Present",
     description:
       "Currently building on my design background with a stronger technical focus on frontend development, modern workflows, and problem-solving in code. At the moment, I'm expanding my skills in TypeScript and Python alongside my existing frontend stack.",
   },
   {
     title: "Multimedia Design",
-    meta: "2023 2025",
+    meta: "2024 2026",
     description:
       "Built a foundation in visual communication, UI/UX thinking, digital prototyping, and design systems, skills I now bring directly into frontend development.",
   },
   {
-    title: "Frontend Focus",
+    title: "Current Focus",
     meta: "Ongoing",
     description:
-      "Working with JavaScript, React, Next.js, and Tailwind CSS to build responsive websites and interfaces with a clear visual identity and strong user focus.",
+      "I enjoy frontend development, but I'm also increasingly interested in backend and databases, especially how data and logic work behind the interface.",
   },
 ];
 
@@ -36,7 +36,7 @@ export const Timeline = () => {
           </div>
 
           <div className="p-8 md:p-12 col-span-3 flex flex-col justify-center bg-white">
-            <div className="bg-mux-bg border-2 border-black p-8 neo-shadow-static hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[12px_12px_0px_black] transition-transform">
+            <div className="bg-mux-bg border-2 border-black p-8 ">
               <h3 className="text-2xl font-black text-black uppercase tracking-tight mb-4">
                 {entry.title}
               </h3>
@@ -45,7 +45,7 @@ export const Timeline = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div>  
       ))}
     </div>
   );
