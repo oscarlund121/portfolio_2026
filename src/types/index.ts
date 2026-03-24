@@ -22,6 +22,7 @@ export type SkillGroup = {
 
 export type TimelineEntry = {
   title: string;
+  subtitle: string;
   meta: string;
   description: string;
 };
