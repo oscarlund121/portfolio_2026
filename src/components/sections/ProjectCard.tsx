@@ -148,7 +148,7 @@ export const ProjectCard = ({ project, index }: ProjectCardProps) => {
       </div>
 
       <div
-        className={`w-full md:w-1/2 p-8 md:p-16 flex items-center justify-center ${
+        className={`w-full md:w-1/2 p-8 md:p-16 flex items-center justify-center order-first md:order-0 ${
           index % 2 === 0 ? "bg-mux-blue/10" : "bg-mux-yellow/10"
         }`}
       >
