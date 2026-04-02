@@ -1,6 +1,6 @@
 import SectionHeading from "@/components/ui/SectionHeading";
 
-const currentlyLearning = ["Python", "SQL / Databases", "Docker"];
+const currentlyLearning = ["Python", "TypeScript", "SQL / Databases", "Docker"];
 
 export const CurrentlyLearning = () => {
   return (
