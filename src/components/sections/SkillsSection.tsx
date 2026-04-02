@@ -8,7 +8,7 @@ const skillGroups: SkillGroup[] = [
   },
   {
     title: "Data & Systems",
-    items: ["API Integration & Data Processing", "SQL / Databases", "Data Transformation (filtering, mapping, sorting)", "Postman (API testing & validation)", "Docker (containerized environments)"],
+    items: ["API Integration & Data Processing", "SQL / Databases", "Data Handling", "Postman", "Docker"],
   },
   {
     title: "Design",
