@@ -5,11 +5,26 @@ import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 export const projects: Project[] = [
   {
+    title: "Travel Destination Tracker",
+    description:
+      "A full-stack application where users sign up, authenticate, and manage structured travel data through a custom CRUD system. Built with Python, Flask, and MariaDB, running in Docker.",
+    whatIDid:
+      "Designed the relational database schema (users and destinations), implemented authentication with hashed passwords, built server-side CRUD logic in Flask, and connected it all through Jinja2 templates.",
+    role: "Full-Stack Development",
+    tech: "Python, Flask, MariaDB, Docker, Jinja2",
+    year: "2026",
+    projectType: "School project",
+    status: "Completed",
+    tags: ["Python", "Flask", "MariaDB", "Docker", "Full-Stack"],
+    sourceUrl: "https://github.com/oscarlund121/2026_1_travel",
+    sourceLabel: "Source Code",
+  },
+  {
     title: "Psychotherapy Practice Site",
     description:
-      "Designed and developed a responsive website for a psychotherapy practice, focused on accessibility, clarity, and building trust through design.",
+      "A responsive client website for a psychotherapy practice, built with a focus on accessibility, clarity, and trust-oriented design.",
     whatIDid:
-      "Designed the interface, built responsive layouts in Next.js and Tailwind CSS, and focused on accessibility and a calm, trustworthy user experience.",
+      "Designed the interface in Figma, built responsive layouts in Next.js and Tailwind CSS, and prioritized accessibility and a calm, professional user experience.",
     role: "UI Design, Frontend Development",
     tech: "Next.js, Tailwind CSS, Figma",
     year: "2024",
@@ -23,18 +38,19 @@ export const projects: Project[] = [
     sourceLabel: "Source Code",
   },
   {
-    title: "Travel Destination Tracker",
+    title: "Danser med Piger - Artist Platform",
     description:
-      "A full-stack travel destination tracker built with Python and Flask. Users can sign up, log in, and manage their own list of destinations with dates, location, and description.",
+      "A full-stack artist website that fetches and displays live content from multiple external APIs. News and merchandise are served from a Google Sheets-backed endpoint; music data is pulled from the Spotify Web API.",
     whatIDid:
-      "Built the backend with Flask, designed and created the MariaDB database (users and destinations tables), implemented user authentication with hashed passwords, and connected everything with server-rendered Jinja2 templates.",
-    role: "Full-Stack Development",
-    tech: "Python, Flask, MariaDB, Docker, Jinja2",
-    year: "2026",
-    projectType: "School project",
+      "Integrated the Spotify Web API using OAuth client credentials to fetch artist profiles and top tracks. Built data fetching layers over Google Apps Script endpoints acting as a lightweight CMS for products and news. Managed client-side cart and UI state with Zustand, and structured all UI components around mapped and filtered API responses.",
+    role: "Frontend Development, API Integration",
+    tech: "Next.js, React, Tailwind CSS, Spotify API, Google Apps Script, Zustand",
+    year: "2025",
+    projectType: "Exam project",
     status: "Completed",
-    tags: ["Python", "Flask", "MariaDB", "Docker", "Full-Stack"],
-    sourceUrl: "https://github.com/oscarlund121/2026_1_travel",
+    tags: ["Next.js", "React", "API Integration", "Data Fetching", "Spotify API", "Zustand"],
+    image: "/img/dmp-eksamen.png",
+    sourceUrl: "https://github.com/oscarlund121/dmp-eksamen",
     sourceLabel: "Source Code",
   },
   {
@@ -53,21 +69,6 @@ export const projects: Project[] = [
     liveUrl: "https://praktik-digital.vercel.app/",
     sourceUrl: "https://github.com/oscarlund121/praktik-digital",
     liveLabel: "View Live",
-    sourceLabel: "Source Code",
-  },
-  {
-    title: "Exam Project",
-    description:
-      "A school exam project built around real-world frontend techniques: API fetching, data mapping, and dynamic filtering with a focus on clean component structure.",
-    whatIDid:
-      "Implemented API calls and data fetching, mapped and transformed response data, and built filtering functionality across a structured component-based UI.",
-    role: "Frontend Development",
-    tech: "Next.js, React, Tailwind CSS, REST API",
-    year: "2025",
-    projectType: "Exam project",
-    status: "Completed",
-    tags: ["Next.js", "React", "Tailwind CSS", "API Fetching", "Filtering"],
-    image: "/img/dmp-eksamen.png",
     sourceLabel: "Source Code",
   },
 

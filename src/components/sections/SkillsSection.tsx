@@ -7,12 +7,16 @@ const skillGroups: SkillGroup[] = [
     items: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Tailwind CSS"],
   },
   {
+    title: "Data & Systems",
+    items: ["API Integration & Data Processing", "SQL / Databases", "Data Transformation (filtering, mapping, sorting)", "Postman (API testing & validation)", "Docker (containerized environments)"],
+  },
+  {
     title: "Design",
     items: ["Figma", "UI Design", "Responsive Layout", "Visual Hierarchy", "Prototyping"],
   },
   {
     title: "Workflow",
-    items: ["Git", "GitHub", "Component-Based Development", "API Integration", "Design-to-Code Implementation"],
+    items: ["Git", "GitHub", "Component-Based Development", "Design-to-Code Implementation"],
   },
 ];
 
@@ -22,10 +26,10 @@ export const SkillsSection = () => {
       <div className="grid-container px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <SectionHeading
           title="Skills & Competencies"
-          intro="I work with frontend development from both a visual and technical angle. My strengths are responsive layout, UI implementation, structured component work, and turning design ideas into clear digital experiences."
+          intro="I build applications that connect data sources, structure information, and present it through clean, scalable interfaces. My work spans frontend development, database design, API integration, and turning complex data into usable digital tools."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
           {skillGroups.map((group) => (
             <div
               key={group.title}

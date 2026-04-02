@@ -1,9 +1,10 @@
 export const AboutBio = () => {
-  const specialties = [
+  const focusAreas = [
     "Frontend Development",
-    "UI / Visual Design",
-    "Responsive Layouts",
     "Component Architecture",
+    "API & Integration",
+    "Databases (SQL)",
+    "Backend Development (learning)",
   ];
 
   return (
@@ -28,9 +29,9 @@ export const AboutBio = () => {
 
           {/* Right: Stacked specialties */}
           <div className="md:w-2/5 flex flex-col justify-center">
-            <p className="tech-mono text-black/40 text-xs mb-4">Specialties</p>
+            <p className="tech-mono text-black/40 text-xs mb-4">Focus Areas</p>
             <ul className="space-y-3">
-              {specialties.map((item) => (
+              {focusAreas.map((item) => (
                 <li
                   key={item}
                   className="text-lg font-bold text-black border-b border-mux-border pb-3 last:border-b-0 last:pb-0"

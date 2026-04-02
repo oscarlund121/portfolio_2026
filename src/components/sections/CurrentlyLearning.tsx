@@ -1,6 +1,6 @@
 import SectionHeading from "@/components/ui/SectionHeading";
 
-const currentlyLearning = ["TypeScript", "Python", "Docker", "SQL / Databases"];
+const currentlyLearning = ["Python", "SQL / Databases", "Docker", "Data Processing"];
 
 export const CurrentlyLearning = () => {
   return (
@@ -9,7 +9,7 @@ export const CurrentlyLearning = () => {
         <SectionHeading title="Currently Learning" />
 
         <p className="text-lg text-black/80 max-w-3xl mx-auto font-medium leading-relaxed text-center mt-4 mb-10">
-          As part of my top-up education in web development at EK, I'm currently expanding my skill set with TypeScript and Python while continuing to strengthen my frontend foundation and build a broader technical understanding.
+          Through my top-up in web development at EK, I&apos;m building deeper skills in backend development, database design, and data handling. My focus is on understanding how data moves through systems, from APIs and databases to the interfaces that make it useful.
         </p>
 
         <div className="flex flex-wrap justify-center gap-4">
