@@ -33,9 +33,9 @@ export const projects: Project[] = [
     tags: ["Next.js", "Tailwind CSS", "UI Design", "Responsive Design"],
     image: "/img/susan-psyko.png",
     liveUrl: "https://www.psykoterapisusan.dk/",
-    sourceUrl: "https://github.com/oscarlund121/susancorrecto",
+    
     liveLabel: "View Live",
-    sourceLabel: "Source Code",
+    
   },
   {
     title: "Danser med Piger - Artist Platform",
