@@ -30,7 +30,7 @@ export function ContactForm() {
         <p className="text-black/60 font-medium">
           Thanks for reaching out. I'll get back to you soon.
         </p>
-      </div>
+      </div>  
     );
   }
 

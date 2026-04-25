@@ -56,6 +56,9 @@ export function Navigation() {
 
         {/* Right Call to Actions */}
         <div className="hidden md:flex items-center space-x-6 border-l border-mux-border pl-6 h-full">
+          <Link href="https://www.linkedin.com/in/oscar-lund/" target="_blank" className="text-sm font-bold tracking-widest text-black uppercase hover:text-black/60 transition-colors">
+            LinkedIn
+          </Link>
           <Link href="https://github.com/oscarlund121" target="_blank" className="text-sm font-bold tracking-widest text-black uppercase hover:text-black/60 transition-colors">
             GITHUB
           </Link>
@@ -104,7 +107,15 @@ export function Navigation() {
               ))}
               <div className="pt-4 flex flex-col gap-4">
                 <Link 
-                  href="https://github.com"
+                  href="https://www.linkedin.com/in/oscar-lund/"
+                  target="_blank"
+                  onClick={() => setIsOpen(false)}
+                  className="block px-4 py-3 text-base font-bold text-black text-center border border-black uppercase"
+                >
+                  LinkedIn
+                </Link>
+                <Link 
+                  href="https://github.com/oscarlund121"
                   target="_blank"
                   onClick={() => setIsOpen(false)}
                   className="block px-4 py-3 text-base font-bold text-black text-center border border-black uppercase"
