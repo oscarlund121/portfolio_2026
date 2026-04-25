@@ -92,9 +92,9 @@ export function Navigation() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="md:hidden absolute top-[72px] left-0 right-0 bg-mux-bg border-b border-mux-border shadow-xl"
+            className="md:hidden absolute top-18 left-0 right-0 bg-mux-bg border-b border-mux-border shadow-xl"
           >
-            <div className="px-4 pt-2 pb-6 space-y-2 border-x border-mux-border mx-auto max-w-[1440px]">
+            <div className="px-4 pt-2 pb-6 space-y-2 border-x border-mux-border mx-auto max-w-360">
               {links.map((link) => (
                 <Link
                   key={link.path}
